@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вишлист</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <style src="styles.css"></style> -->
+  </head>
+  <body>
+    <!-- <img class="bg" src="img_bg.jpg" /> -->
+    <div class="header">
+      <h1>Alina's Wishlist</h1>
+    </div>
+    <div class="popup" id="popup">
+      <div class="curved-text">
+        <svg viewBox="0 0 200 100">
+          <path id="curve" d="M10,90 C100,10 200,90 10,90" fill="transparent" />
+          <text>
+            <textPath xlink:href="#curve">Покрутим ещё?</textPath>
+          </text>
+        </svg>
+      </div>
+      <button class="close-btn" id="close-popup">Close</button>
+    </div>
+    <div class="box">
+      <div class="cell no">Aroma Candle</div>
+      <div class="cell no">T-Shirt "Сис Масис"</div>
+      <div class="cell no">Litteraly anything from Made by Armenia</div>
+      <div class="cell no">Brocard Peurfume "Русская княжна"</div>
+      <div class="cell yes">Ukulele</div>
+      <div class="cell no">Book 1: Second Sex</div>
+      <div class="cell no">Book 2: The Secret History (D.Tartt)</div>
+      <div class="cell no">
+        Book 3: Да любая кроме Пелевина и тех что у меня уже есть тут
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

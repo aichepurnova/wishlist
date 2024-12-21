@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  color: #ae394a;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-family: fantasy;
+  color: rgb(39, 86, 173);
+  font-weight: 500;
+}
+.cell {
+  width: 200px;
+  text-wrap: true;
+  height: auto;
+  border: 2px solid rgb(39, 86, 173);
+  background-color: rgba(100, 148, 237, 0.5);
+  border-radius: 15px;
+  padding: 10px;
+  transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
+}
+
+.cell {
+  position: relative;
+}
+.cell.yes:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.cell.no:hover {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.png {
+  position: absolute;
+  width: 100px; /* Adjust size */
+  height: 100px;
+  background-image: url("stars.png"); /* Replace with your tiny PNG path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7; /* Start visible */
+  transition: opacity 0.5s ease-in-out; /* Smooth blink */
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(232, 225, 145);
+  /* border: 2px solid #007bff; */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  text-align: center;
+  z-index: 1;
+}
+
+.popup .curved-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(39, 86, 173);
+  text-transform: uppercase;
+}
+
+/* Curved text using SVG */
+.curved-text svg {
+  width: 200px;
+  height: 100px;
+}
+
+/* Close button */
+.popup .close-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: rgb(39, 86, 173);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
